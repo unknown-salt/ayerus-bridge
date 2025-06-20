@@ -10,9 +10,8 @@ export function fetch(link) {
     connection.setRequestMethod("GET");
     connection.setRequestProperty("User-Agent", "Mozilla/5.0");
 
-    const reader = new BufferedReader(
-      new InputStreamReader(connection.getInputStream())
-    );
+    // prettier-ignore
+    const reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
     let line;
     let response = "";
 
