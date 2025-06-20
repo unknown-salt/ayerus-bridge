@@ -19,6 +19,6 @@ register("chat", (discord, message, event) => {
   cancel(event);
 
   // prettier-ignore
-  ChatLib.chat(`&3Discord > &b${discord}&7: ${message.replace(/&r/g, '§r').replace(/&/g, "§&&7&§7")}`);
+  ChatLib.chat(`&3Discord > &b${discord.replace(/&r/g, '§r').replace(/&/g, "§&&7&§7")}&7: ${message.replace(/&r/g, '§r').replace(/&/g, "§&&7&§7")}`);
   console.log(message.replace(/&/g, "§&"));
 }).setCriteria(regex);
