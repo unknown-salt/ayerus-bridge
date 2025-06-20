@@ -8,7 +8,7 @@ try {
   // prettier-ignore
   const response = fetch(`https://sessionserver.mojang.com/session/minecraft/profile/${bot}`);
   // prettier-ignore
-  regex = RegExp(`^(?:.{2,4})?Guild (?:.{2,4})?> (?:\\[.+\\] )?(?:&7)?(?:${response.name}) (?:.{2,4})?\\[(?:.+)\\](?:.{2,4})?: (?:&r)?(.+):(?: )?(.+)?$`)
+  regex = RegExp(`^(?:.{2,4})?Guild (?:.{2,4})?> (?:\\[.+?\\] )?(?:&7)?(?:${response.name}) (?:.{2,4})?\\[(?:.+?)\\](?:.{2,4})?: (?:&r)?(.+?):(?: )?(.*)$`)
   ChatLib.chat("&7Successfully received bot name!");
 } catch (err) {
   console.log(err);
