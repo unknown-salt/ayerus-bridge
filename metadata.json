@@ -1,0 +1,7 @@
+{
+  "name": "AYERUS Bridge",
+  "creator": "FanerXp",
+  "description": "Better messages from the AYERUS guild's bridge bot",
+  "version": "1.0.0",
+  "entry": "index.js"
+}
