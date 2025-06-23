@@ -6,9 +6,9 @@ let regex = new RegExp();
 
 try {
   // prettier-ignore
-  const response = fetch(`https://sessionserver.mojang.com/session/minecraft/profile/${bot}`);
+  const botName = fetch(`https://api.minecraftservices.com/minecraft/profile/lookup/${bot}`).name;
   // prettier-ignore
-  regex = RegExp(`^(?:.{2,4})?(?:Guild|G) (?:.{2,4})?> (?:\\[.+?\\] )?(?:&7)?(?:${response.name}) (?:.{2,4})?\\[(?:.+?)\\](?:.{2,4})?: (?:&r)?(.+?):(?: )?(.*)$`)
+  regex = RegExp(`^(?:.{2,4})?(?:Guild|G) (?:.{2,4})?> (?:\\[.+?\\] )?(?:&7)?(?:${botName}) (?:.{2,4})?\\[(?:.+?)\\](?:.{2,4})?: (?:&r)?(.+?):(?: )?(.*)$`)
   ChatLib.chat("&7Successfully received bot name!");
 } catch (err) {
   console.log(err);
