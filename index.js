@@ -19,7 +19,7 @@ try {
   const botPattern = names.join("|");
 
   // prettier-ignore
-  regex = RegExp(`^(?:.{2,4})?(?:Guild|G) (?:.{2,4})?> (?:\\[.+?\\] )?(?:&7)?(?:${botPattern}) (?:.{2,4})?\\[(?:.+?)\\](?:.{2,4})?: (?:&r)?(.+?):(?: )?(.*)$`)
+  regex = RegExp(`^(?:.{2,4})?(?:Guild|G) (?:.{2,4})?> (?:\[.+?\] )?(?:&7)?(?:${botPattern})(?: (?:.{2,4})?\[[^]]+\])?(?:.{2,4})?: (?:&r)?(.+?):(?: )?(.*)$`)
 
   ChatLib.chat("&7Successfully received bot names!");
 } catch (err) {
