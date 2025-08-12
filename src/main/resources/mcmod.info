@@ -1,0 +1,16 @@
+[
+{
+  "modid": "bridgebot",
+  "name": "BridgeBot",
+  "description": "Format guild bridge bot messages",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["FanerXp"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
